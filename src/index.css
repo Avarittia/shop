@@ -1,13 +1,348 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+#root {
+  position: relative;
+}
+.top-btn {
+  position: fixed;
+  right: 50px;
+  bottom: 100px;
+  z-index: 1;
+  cursor: pointer;
+  color: white;
+  border: none;
+  background-color: #f2a85d;
+}
+.top-btn:hover{
+  color: #f2a85d;
+  background-color: white;
+}
+#navbarScrollingDropdown {
+  color: white !important;
+}
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  color: #016773;
+  background-color: #fe9126;
+  border-color: none;
+}
+.nav-tabs .nav-link:hover {
+  color: white;
+  background: #fe9126;
+  border: 1px solid;
+}
+.nav-tabs .nav-link {
+  color: #016773;
+  border-radius: 0;
+}
+.carousel .carousel-indicators button {
+  background-color: #029241;
+  border: none;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+.carousel .carousel-indicators button {
+  background-color: #029241;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+.carousel .carousel-indicators button.active {
+  background-color: #ffc107;
+  border: none;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+.brandStore {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 2rem;
+}
+.add-cart-button:hover {
+  background-color: #fe9126 !important ;
+}
+.img {
+  overflow: hidden !important;
+}
+.img:hover {
+  overflow: hidden !important;
+  transition: 0.25s ease-in;
+}
+
+advert > .img:hover {
+  transform: scale(1.5);
+  overflow: hidden;
+  background-color: rgb(171, 171, 171);
+}
+.sidebar-link:hover {
+  color: #3399cc !important;
+}
+.page-link:focus {
+  border-color: #fe9126;
+
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.brand-link:hover {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+.footer-link:hover {
+  color: #fe9126 !important;
+  transition: 0.5s ease-in;
+}
+.form-select:focus {
+  border-color: black;
+  outline: 0px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader {
+  margin: 50px;
+  border: 10px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 10px solid #fe9126;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  justify-content: center;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.rounded-circle:hover {
+  background-color: #fe9126;
+}
+.rounded-circle:hover > .cart {
+  fill: white;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem 0.5rem;
+}
+
+section {
+  width: 100%;
+  max-width: 420px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1rem;
+  background-color: #f3f3f3;
+}
+section.forgot-password {
+  width: 100%;
+  max-width: 420px;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1rem;
+  background-color: #f3f3f3;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-grow: 1;
+  padding-bottom: 1rem;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"] button,
+textarea {
+  font-size: 16px;
+  padding: 0.25rem;
+}
+
+label,
+button {
+  margin-top: 1rem;
+}
+
+button {
+  padding: 0.5rem;
+}
+
+.instructions {
+  font-size: 0.75rem;
+  border-radius: 0;
+  background: #000;
+  color: #fff;
+  padding: 0.25rem;
+  position: relative;
+  bottom: -10px;
+}
+
+.instructions > svg {
+  margin-right: 0.25rem;
+}
+
+.offscreen {
+  position: absolute;
+  left: -9999px;
+}
+
+.hide {
+  display: none;
+}
+
+.valid {
+  color: limegreen;
+  margin-left: 0.25rem;
+}
+
+.invalid {
+  color: red;
+  margin-left: 0.25rem;
+}
+
+.errmsg {
+  background-color: lightpink;
+  color: firebrick;
+  font-weight: bold;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.line {
+  display: inline-block;
+}
+.logout-btn:hover {
+  background-color: #f2a85d !important;
+  border: 1px solid #fe9126 !important;
+  color: white !important;
+}
+.login-btn:hover {
+  background-color: #fe9126 !important;
+  transition: 0.5s ease-in;
+}
+.top-navigate {
+  flex-direction: row;
+}
+button#fill-tab-example-tab-profile,
+button#fill-tab-example-tab-home {
+  margin: 0;
+  padding: 0;
+  height: 57px;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+}
+button.accordion-button {
+  color: #000 !important;
+  background-color: white !important;
+  font-weight: 600;
+  font-size: 20px;
+  outline: 0px !important;
+}
+button.accordion-button:focus {
+  box-shadow: none;
+  border-color: rgba(0, 0, 0, 0.125);
+}
+.main {
+  margin-top: 2%;
+  margin-left: 20%;
+  font-size: 28px;
+  padding: 0 10px;
+  width: 58%;
+}
+
+.main h2 {
+  color: #333;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.main .card {
+  background-color: #fff;
+  border-radius: 18px;
+  box-shadow: 1px 1px 8px 0 grey;
+  height: auto;
+  margin-bottom: 20px;
+
+}
+
+.main .card table {
+  border: none;
+  font-size: 16px;
+  height: 270px;
+  width: 80%;
+}
+
+@media (max-width: 450px) {
+  .top-navigate {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .nav-para {
+    text-align: center;
+  }
+  .account {
+    width: 100%;
+    border-bottom: 1px solid whitesmoke;
+    padding-bottom: 8px;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+  }
+  table {
+    width: 400px;
+  }
+}
+@media (max-width: 768px) {
+  .top-navigate {
+    flex-direction: column;
+    gap: 4px;
+  }
+  .nav-para {
+    text-align: center;
+  }
+  .account {
+    width: 100%;
+    border-bottom: 1px solid whitesmoke;
+    padding-bottom: 8px;
+  }
+  .table-data {
+    flex-direction: column;
+  }
 }
