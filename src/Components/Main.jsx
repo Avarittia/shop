@@ -13,7 +13,6 @@ import Footer from "./Footer";
 import FooterBottom from "./FooterBottom";
 import Login from "./Login";
 import Navigation from "./Navigation";
-import NewOffers from "./NewOffers";
 import Products from "./Products";
 import Register from "./Register";
 import ScrollButton from "./ScrollButton";
