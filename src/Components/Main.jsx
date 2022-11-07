@@ -46,9 +46,7 @@ const Main = () => {
           element={!user ? <ForgotPass /> : <Navigate to="/" />}
         />
         <Route path="/:categoryID" element={<CategoryBody />} />
-        {/* <Route path="/groceries" element={<Groceries />} />
-        <Route path="/household" element={<Household />} />
-        <Route path="/personal-care" element={<PersonalCare />} /> */}
+
       </Routes>
       <Footer />
       <FooterBottom />

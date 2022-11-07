@@ -1,38 +1,26 @@
 [
     {
-        "id": 2211,
-        "name": "Tata Salt",
+        "id": 2223,
+        "name": "Toor Daal",
         "price": 20.99,
-        "images": "/images/1.png"
+        "images": "/images/14.png"
     },
     {
-        "id": 2212,
-        "name": "Fortune-Sunflower",
+        "id": 2224,
+        "name": "Moong Daal",
         "price": 20.99,
-        "images": "/images/2.png"
+        "images": "/images/15.png"
     },
     {
-        "id": 2213,
-        "name": "Aashirvaad-Atta",
+        "id": 2225,
+        "name": "Channa",
         "price": 20.99,
-        "images": "/images/3.png"
+        "images": "/images/16.png"
     },
     {
-        "id": 2214,
-        "name": "Sampan-toor-Daal",
+        "id": 2226,
+        "name": "Arhar",
         "price": 20.99,
-        "images": "/images/4.png"
-    },
-    {
-        "id": 2215,
-        "name": "Parrys Sugar",
-        "price": 20.99,
-        "images": "/images/5.png"
-    },
-    {
-        "id": 2216,
-        "name": "Saffola Gold",
-        "price": 20.99,
-        "images": "/images/6.png"
+        "images": "/images/17.png"
     }
 ]

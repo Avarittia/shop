@@ -1,7 +1,7 @@
 import React from "react";
 import { Button, Card, Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import items from "../Data/groceries.json";
+import items from "../Data/data.json";
 
 const AdvertisedOffers = () => {
   return (

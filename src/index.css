@@ -16,8 +16,8 @@ code {
 }
 .top-btn {
   position: fixed;
-  right: 50px;
-  bottom: 100px;
+  right: 60px;
+  bottom: 80px;
   z-index: 1;
   cursor: pointer;
   color: white;
