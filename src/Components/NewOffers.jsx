@@ -96,3 +96,5 @@ const NewOffers = () => {
 };
 
 export default NewOffers;
+
+https://github.com/Avarittia/shop.git
